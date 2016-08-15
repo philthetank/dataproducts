@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -42,16 +43,9 @@
     <!-- SLIDES -->
     <slide class="class" id="id" style="background:;">
   <article data-timings="">
-    <p>For my project I created a project that calculates BMI based on user input.
-BMI is used to determine how fat you are.</p>
+    <p>For my project I created a project that calculates BMI based on user input.</p>
 
-<p>BMI less than 18.5 is underweight</p>
-
-<p>BMI between 18.5 and 25 is normal</p>
-
-<p>BMI between 25 and 30 is overweight</p>
-
-<p>BMI over 30 is obese</p>
+<p>The app also displays the weight-class for the calculated BMI.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -59,19 +53,9 @@ BMI is used to determine how fat you are.</p>
 
 <slide class="class" id="id" style="background:;">
   <article data-timings="">
-    <p>This page satisfies the requirement to run r code.</p>
+    <p>There are  different classes of BMI.</p>
 
-<pre><code class="r">Sys.Date()
-</code></pre>
-
-<pre><code>## [1] &quot;2016-07-29&quot;
-</code></pre>
-
-<pre><code class="r">Sys.time()
-</code></pre>
-
-<pre><code>## [1] &quot;2016-07-29 17:20:55 EDT&quot;
-</code></pre>
+<p>They are Very severely underweight, Severely underweight, Underweight, Normal (healthy weight), Overweight, Obese Class I (Moderately obese), Obese Class II (Severely obese), Obese Class III (Very severely obese).</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -79,7 +63,14 @@ BMI is used to determine how fat you are.</p>
 
 <slide class="class" id="id" style="background:;">
   <article data-timings="">
-    <p>Checkout out my BMI calculator at <a href="https://philipseidel.shinyapps.io/Shiny-Application-Reproducible-Pitch/">https://philipseidel.shinyapps.io/Shiny-Application-Reproducible-Pitch/</a></p>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <p>View the BMI calculator at <a href="https://philipseidel.shinyapps.io/Shiny-Application-Reproducible-Pitch/">https://philipseidel.shinyapps.io/Shiny-Application-Reproducible-Pitch/</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -107,6 +98,12 @@ BMI is used to determine how fat you are.</p>
          3
       </a>
     </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
   </ul>
   </div>  <!--[if IE]>
     <script 
@@ -116,6 +113,14 @@ BMI is used to determine how fat you are.</p>
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
   
   <!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
